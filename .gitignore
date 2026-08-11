@@ -1,0 +1,63 @@
+# General ignores
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Programming languages specific (Since this repo will have various languages)
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.env
+.venv
+venv/
+
+# C / C++
+*.o
+*.obj
+*.out
+*.app
+*.exe
+*.dll
+*.lib
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Web/Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore any secret tokens
+.env
+secrets.json
