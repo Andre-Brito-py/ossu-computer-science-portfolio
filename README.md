@@ -9,6 +9,12 @@
 
 ---
 
+## ⚠️ Important Note Regarding Lost Progress
+
+> **Unfortunately, my personal systems were recently compromised in a cyberattack (hacking incident). As a result, I tragically lost all my local files, including my original course projects, personal notes, and downloaded certificates for this curriculum.**
+>
+> **While the folders in this repository are currently empty and I cannot provide direct links to the lost certificates, this portfolio stands as a symbolic testament to my full completion of the OSSU Computer Science curriculum.**
+
 ## 🎓 About This Repository
 
 This repository serves as a portfolio and tracker demonstrating my successful completion of the **[Open Source Society University (OSSU) Computer Science Curriculum](https://github.com/ossu/computer-science)**. 
@@ -91,31 +97,8 @@ This repository is organized into folders following the curriculum's structure. 
 
 ---
 
-## 🚀 Final Project
-
-At the end of the curriculum, I built a final project to consolidate my knowledge. 
-
-- **Project Name:** [Your Project Name]
-- **Description:** [Brief description of what it does and the technologies used]
-- **Repository:** [Link to the project repo or link to the folder here]
-- **Live Demo:** [Link to live demo if available]
-
----
-
-## 📜 Certificates
-
-*Links to verifiable certificates obtained.*
-
-- [Intro to CS Certificate](#)
-- [Programming Languages Certificate](#)
-- [Algorithms Specialization Certificate](#)
-
----
-
 ## 📬 Contact
 
 Feel free to reach out if you want to discuss computer science, software engineering, or the OSSU curriculum!
 
-- **LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- **Email:** [Your Email Address]
-- **Portfolio:** [Your Website]
+- **GitHub:** [Andre-Brito-py](https://github.com/Andre-Brito-py)
