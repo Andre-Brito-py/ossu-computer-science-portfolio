@@ -1,0 +1,66 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+
+/**
+ * The Hack CPU (Central Processing unit), consisting of an ALU,
+ * two registers named A and D, and a program counter named PC.
+ */
+
+CHIP CPU {
+
+    IN  inM[16],         // M value input  (M = contents of RAM[A])
+        instruction[16], // Instruction for execution
+        reset;           // Signals whether to re-start the current
+
+    OUT outM[16],        // M value output
+        writeM,          // Write to M? 
+        addressM[15],    // Address in data memory (of M)
+        pc[15];          // address of next instruction
+
+    PARTS:
+    // Decode instruction
+    // instruction[15] = i-bit (0 for A-instruction, 1 for C-instruction)
+    Not(in=instruction[15], out=isA);
+    Not(in=isA, out=isC);
+    
+    // A-Register
+    // Load A if it's an A-instruction or if C-instruction and d1 (instruction[5]) is 1
+    And(a=isC, b=instruction[5], out=loadAFromALU);
+    Or(a=isA, b=loadAFromALU, out=loadA);
+    Mux16(a=instruction, b=aluOut, sel=loadAFromALU, out=inA);
+    ARegister(in=inA, load=loadA, out=outA, out[0..14]=addressM);
+    
+    // D-Register
+    // Load D if C-instruction and d2 (instruction[4]) is 1
+    And(a=isC, b=instruction[4], out=loadD);
+    DRegister(in=aluOut, load=loadD, out=outD);
+    
+    // ALU
+    // Mux for ALU input Y (A or M depending on a-bit instruction[12])
+    Mux16(a=outA, b=inM, sel=instruction[12], out=aluY);
+    
+    ALU(x=outD, y=aluY, 
+        zx=instruction[11], nx=instruction[10], zy=instruction[9], ny=instruction[8], 
+        f=instruction[7], no=instruction[6], 
+        out=aluOut, out=outM, zr=zr, ng=ng);
+        
+    // writeM output
+    And(a=isC, b=instruction[3], out=writeM);
+    
+    // PC (Program Counter)
+    // Jumps
+    Or(a=zr, b=ng, out=zrOrNg);
+    Not(in=zrOrNg, out=pos);
+    
+    And(a=instruction[0], b=pos, out=jGT);
+    And(a=instruction[1], b=zr, out=jEQ);
+    And(a=instruction[2], b=ng, out=jLT);
+    
+    Or(a=jGT, b=jEQ, out=jGE);
+    Or(a=jGE, b=jLT, out=jumpCond);
+    And(a=isC, b=jumpCond, out=loadPC);
+    Not(in=loadPC, out=incPC);
+    
+    PC(in=outA, load=loadPC, inc=incPC, reset=reset, out[0..14]=pc);
+}
