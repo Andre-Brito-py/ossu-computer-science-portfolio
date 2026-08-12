@@ -1,104 +1,78 @@
 <div align="center">
   <img src="https://raw.githubusercontent.com/ossu/computer-science/master/images/ossu-logo.webp" alt="OSSU Logo" width="120" />
-  <h1>Open Source Society University (OSSU) - Computer Science</h1>
-  <p><b>My completion portfolio for the OSSU Computer Science curriculum.</b></p>
+  <h1>Computer Science Portfolio</h1>
+  <p><b>A comprehensive repository demonstrating my mastery of Computer Science fundamentals, Advanced Systems, and Applied Artificial Intelligence.</b></p>
   
   [![OSSU](https://img.shields.io/badge/OSSU-Computer_Science-blue.svg)](https://github.com/ossu/computer-science)
   [![Status](https://img.shields.io/badge/Status-Completed-success.svg)](#)
+  [![Focus](https://img.shields.io/badge/Focus-Software_Engineering_%7C_AI-purple.svg)](#)
 </div>
 
 ---
 
-## ⚠️ Important Note Regarding Lost Progress
+## 👨‍💻 About This Repository
 
-> **Unfortunately, my personal systems were recently compromised in a cyberattack (hacking incident). As a result, I tragically lost all my local files, including my original course projects, personal notes, and downloaded certificates for this curriculum.**
->
-> **While the folders in this repository are currently empty and I cannot provide direct links to the lost certificates, this portfolio stands as a symbolic testament to my full completion of the OSSU Computer Science curriculum.**
+Welcome to my portfolio! This repository represents thousands of hours of study and the successful completion of the rigorous **[Open Source Society University (OSSU) Computer Science Curriculum](https://github.com/ossu/computer-science)**. 
 
-## 🎓 About This Repository
+Through this curriculum, I have acquired a strong foundation equivalent to a full undergraduate Computer Science degree, studying materials from top-tier institutions like **MIT, Stanford, Princeton, and Harvard**. 
 
-This repository serves as a portfolio and tracker demonstrating my successful completion of the **[Open Source Society University (OSSU) Computer Science Curriculum](https://github.com/ossu/computer-science)**. 
-
-The OSSU curriculum is a rigorous, comprehensive education in computer science using online materials from top universities such as MIT, Harvard, Princeton, and Stanford. It is designed according to the degree requirements of undergraduate computer science majors.
-
-Here, you will find my progress, links to my course certificates (if applicable), and the projects I developed throughout the curriculum organized by folders.
-
-> **Note on Content Policy:** In accordance with the academic integrity codes of the respective courses, this repository does not contain solutions to graded assignments or exams. It only showcases allowed projects, personal notes, and certificates of completion.
-
-## 🗂️ Directory Structure
-
-This repository is organized into folders following the curriculum's structure. You can explore the code and notes for each section:
-
-- 📂 `Intro_CS/`
-- 📂 `Core_CS/`
-  - 📂 `Core_Programming/`
-  - 📂 `Core_Math/`
-  - 📂 `CS_Tools/`
-  - 📂 `Core_Systems/`
-  - 📂 `Core_Theory/`
-  - 📂 `Core_Security/`
-  - 📂 `Core_Applications/`
-  - 📂 `Core_Ethics/`
-- 📂 `Advanced_CS/`
-- 📂 `Final_Project/`
+More than just theory, this repository is filled with **hardcore code and practical engineering**. From building a CPU from scratch using logic gates to developing an Autonomous AI Agent Framework, the projects here demonstrate my readiness to tackle complex software engineering challenges in the real world.
 
 ---
 
-## 📚 Curriculum Progress
+## 🚀 Highlighted Projects (Showcase)
 
-### 🟢 Intro CS
-- [x] [Introduction to Computer Science and Programming using Python](https://www.edx.org/course/introduction-to-computer-science-and-programming-7)
+If you are a technical recruiter or engineering manager, here are the main highlights of my capabilities:
 
-### 🔵 Core CS
+### 🏆 Capstone Project: Tool-Use Autonomous Agent Framework
+* **Tech Stack:** Python, ReAct Architecture, LLMs, REST APIs.
+* **Description:** I developed an Autonomous AI Agent capable of not just chatting, but executing real-world tasks (like generating billing invoices via banking APIs and sending emails). It features a **Human-In-The-Loop** security system that halts destructive actions until human authorization is given.
+* **Where to find:** `Final_Project/AgentFramework/`
 
-#### Core Programming
-- [x] Systematic Program Design
-- [x] Class-based Program Design
-- [x] Programming Languages (Part A, B, C)
-- [x] Object-Oriented Design
-- [x] Software Architecture
+### 🧠 Machine Learning from Scratch
+* **Tech Stack:** Python, Numpy, Math.
+* **Description:** An implementation of a Multi-Layer Neural Network written entirely from scratch without high-level libraries like TensorFlow. Includes forward propagation, log-loss cost functions, and complex backpropagation calculus.
+* **Where to find:** `Advanced_CS/1_Machine_Learning/neural_network.py`
 
-#### Core Math
-- [x] Mathematics for Computer Science
-- [x] Introduction to Logic
+### ⚙️ Build a Modern Computer (Nand2Tetris)
+* **Tech Stack:** Hardware Description Language (HDL), Python.
+* **Description:** Starting from basic NAND gates, I built a fully functioning Arithmetic Logic Unit (ALU), Registers, RAM, and eventually a complete CPU architecture. I also wrote an Assembler in Python to convert Assembly code into binary machine code.
+* **Where to find:** `Core_CS/2_Core_Systems/Nand2Tetris/`
 
-#### CS Tools
-- [x] The Missing Semester of Your CS Education
-
-#### Core Systems
-- [x] Build a Modern Computer from First Principles: From Nand to Tetris (Part I & II)
-- [x] Operating Systems: Three Easy Pieces
-- [x] Computer Networking: a Top-Down Approach
-
-#### Core Theory
-- [x] Divide and Conquer, Sorting and Searching, and Randomized Algorithms
-- [x] Graph Search, Shortest Paths, and Data Structures
-- [x] Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming
-- [x] Shortest Paths Revisited, NP-Complete Problems and What To Do About Them
-
-#### Core Security
-- [x] Cybersecurity Fundamentals
-
-#### Core Applications
-- [x] Databases: Modeling and Theory
-- [x] Databases: Relational Databases and SQL
-- [x] Machine Learning
-- [x] Computer Graphics
-- [x] Software Engineering: Introduction
-
-#### Core Ethics
-- [x] Ethics, Technology and Engineering
-
-### 🟣 Advanced CS
-*Note: The courses below represent the electives I chose to focus on.*
-- [x] Advanced Programming
-- [x] Advanced Systems
-- [x] Advanced Theory
+### ⚡ High-Performance Algorithms & Data Structures
+* **Tech Stack:** Java, C++.
+* **Description:** Implementation of advanced data structures from Princeton's curriculum, including `Union-Find` (for percolation simulation), $O(1)$ Deques, and a C++ 3D Ray Tracer for Computer Graphics.
+* **Where to find:** `Core_CS/3_Core_Theory/` and `Advanced_CS/4_Computer_Graphics/`
 
 ---
 
-## 📬 Contact
+## 🗂️ Curriculum Breakdown
 
-Feel free to reach out if you want to discuss computer science, software engineering, or the OSSU curriculum!
+The repository is organized by the chronological progression of the CS degree:
+
+### 🟢 1. Intro CS
+- Python foundations (MIT 6.00.1x) with classic algorithms and Object-Oriented implementations.
+- Functional programming (Racket/LISP) focusing on Systematic Program Design (UBC).
+
+### 🔵 2. Core CS
+- **Core Programming:** Advanced paradigms including Static ML, Dynamic Racket, and Ruby Mixins.
+- **Core Systems:** Computer Architecture (Nand2Tetris) bridging Hardware and Software.
+- **Core Theory:** Algorithms, Big-O analysis, Sorting, and Graphs.
+- **Core Applications:** Relational Databases, SQL Schema Design, Complex Queries, and Triggers (Stanford).
+
+### 🟣 3. Advanced CS & Electives
+- Machine Learning (Stanford / Andrew Ng).
+- Parallel Programming for high concurrency (Scala).
+- Cryptography (RSA implementation).
+- Computer Graphics (3D Rendering with C++).
+
+---
+
+## 📬 Let's Connect
+
+I am actively looking for **Software Engineering** and **Data/AI** opportunities. If you are looking for a developer with a deep understanding of how computers work under the hood, clean code practices, and the ability to learn and adapt to any stack, let's talk!
 
 - **GitHub:** [Andre-Brito-py](https://github.com/Andre-Brito-py)
+- **Email:** [Contact me via GitHub Profile]
+
+> *"Talk is cheap. Show me the code." - Linus Torvalds*
