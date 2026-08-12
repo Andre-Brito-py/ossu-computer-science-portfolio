@@ -1,0 +1,13 @@
+apple
+banana
+cherry
+date
+elephant
+fig
+grape
+hangman
+python
+programming
+computer
+science
+algorithm
